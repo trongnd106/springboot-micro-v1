@@ -1,0 +1,10 @@
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      include: health
+  endpoint:
+    health:
+      show-details: always
